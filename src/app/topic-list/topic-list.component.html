@@ -1,0 +1,10 @@
+<mat-list dense>
+  <mat-list-item *ngFor="let topic of topics">
+    <mat-icon mat-list-icon>folder</mat-icon>
+    <h4 mat-line>{{topic.title}}</h4>
+    <p mat-line> 
+      Created {{topic.createdAt | date}} 
+      by {{topic.createdBy.nickname}}
+    </p>
+  </mat-list-item>
+</mat-list>
