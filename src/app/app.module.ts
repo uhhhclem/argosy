@@ -3,11 +3,11 @@ import { NgModule } from '@angular/core';
 
 import {
     MatIconModule,
-    MatListModule,
+    MatListModule
 } from '@angular/material';
 
 import { AppComponent } from './app.component';
-import { TopicListComponent } from './topic-list/topic-list.component';
+import {TopicListComponent} from './topic-list/topic-list.component';
 
 @NgModule({
   declarations: [
