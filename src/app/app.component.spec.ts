@@ -1,10 +1,17 @@
 import { TestBed, async } from '@angular/core/testing';
+import { MaterialModule} from './material/material.module';
+import { TopicListComponent } from './topic-list/topic-list.component';
+import { UserService } from './user.service';
 import { AppComponent } from './app.component';
+ 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [MaterialModule],
+      providers: [UserService],
       declarations: [
-        AppComponent
+        AppComponent,
+        TopicListComponent
       ],
     }).compileComponents();
   }));
@@ -17,11 +24,5 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
     expect(app.title).toEqual('app');
-  }));
-  it('should render title in a h1 tag', async(() => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to app!');
   }));
 });

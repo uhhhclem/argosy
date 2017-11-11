@@ -1,13 +1,12 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {MaterialModule} from './material/material.module';
 
-import {
-    MatIconModule,
-    MatListModule
-} from '@angular/material';
-
-import { AppComponent } from './app.component';
+import {AppComponent } from './app.component';
 import {TopicListComponent} from './topic-list/topic-list.component';
+
+import {TopicService} from './topic.service';
+import {UserService} from './user.service';
 
 @NgModule({
   declarations: [
@@ -16,10 +15,12 @@ import {TopicListComponent} from './topic-list/topic-list.component';
   ],
   imports: [
     BrowserModule,
-    MatListModule,
-    MatIconModule
+    MaterialModule
   ],
-  providers: [],
+  providers: [
+    TopicService,
+    UserService
+  ],
   bootstrap: [AppComponent]
 })
 

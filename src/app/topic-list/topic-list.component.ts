@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TopicService, Topic } from '../topic.service'; 
+import { MaterialModule } from '../material/material.module';
 
 @Component({
   selector: 'topic-list',
@@ -7,6 +8,7 @@ import { TopicService, Topic } from '../topic.service';
   styleUrls: ['./topic-list.component.css'],
   providers: [ TopicService ]
 })
+
 export class TopicListComponent implements OnInit {
   topics: Topic[];
   constructor(private topicService: TopicService) { 
