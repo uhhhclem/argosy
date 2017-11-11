@@ -3,7 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { MaterialModule } from '../material/material.module';
 import { UserService } from '../user.service';
 import { TopicService } from '../topic.service';
-
+import { PostComponent } from '../post/post.component';
 import { TopicListComponent } from './topic-list.component';
 
 describe('TopicListComponent', () => {
@@ -14,7 +14,10 @@ describe('TopicListComponent', () => {
     TestBed.configureTestingModule({
       imports: [MaterialModule],
       providers: [UserService, TopicService],
-      declarations: [ TopicListComponent ]
+      declarations: [ 
+        PostComponent,
+        TopicListComponent,
+      ]
     })
     .compileComponents();
   }));

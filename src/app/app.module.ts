@@ -7,11 +7,13 @@ import {TopicListComponent} from './topic-list/topic-list.component';
 
 import {TopicService} from './topic.service';
 import {UserService} from './user.service';
+import { PostComponent } from './post/post.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TopicListComponent
+    TopicListComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,

@@ -3,7 +3,7 @@ import { TopicService, Topic } from '../topic.service';
 import { MaterialModule } from '../material/material.module';
 
 @Component({
-  selector: 'topic-list',
+  selector: 'argosy-topic-list',
   templateUrl: './topic-list.component.html',
   styleUrls: ['./topic-list.component.css'],
   providers: [ TopicService ]

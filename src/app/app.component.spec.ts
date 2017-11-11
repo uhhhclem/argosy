@@ -1,6 +1,7 @@
 import { TestBed, async } from '@angular/core/testing';
 import { MaterialModule} from './material/material.module';
 import { TopicListComponent } from './topic-list/topic-list.component';
+import { PostComponent } from './post/post.component';
 import { UserService } from './user.service';
 import { AppComponent } from './app.component';
  
@@ -11,7 +12,8 @@ describe('AppComponent', () => {
       providers: [UserService],
       declarations: [
         AppComponent,
-        TopicListComponent
+        TopicListComponent,
+        PostComponent,
       ],
     }).compileComponents();
   }));
