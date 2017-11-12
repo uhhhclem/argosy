@@ -11,7 +11,6 @@ export class Topic {
     this.createdAt = c;
     this.createdByUserID = u;
   }
-  
 }
 
 const TOPICS: Topic[] = [
